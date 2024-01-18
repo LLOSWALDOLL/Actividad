@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>SvLogin</servlet-name>
+        <servlet-class>controlador.SvLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvVerificar</servlet-name>
+        <servlet-class>controlador.SvVerificar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvMenu</servlet-name>
+        <servlet-class>controlador.SvMenu</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CapturarCalificacionesServlet</servlet-name>
+        <servlet-class>controlador.CapturarCalificacionesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GuardarCalificacionesServlet</servlet-name>
+        <servlet-class>controlador.GuardarCalificacionesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActualizarCalificacionServlet2</servlet-name>
+        <servlet-class>controlador.ActualizarCalificacionServlet</servlet-class>
+    </servlet>
+    <!-- Agregando el nuevo servlet -->
+    <servlet>
+        <servlet-name>TuServletDeFiltrado</servlet-name>
+        <servlet-class>controlador.TuServletDeFiltrado</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>SvLogin</servlet-name>
+        <url-pattern>/SvLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvVerificar</servlet-name>
+        <url-pattern>/SvVerificar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvMenu</servlet-name>
+        <url-pattern>/SvMenu</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CapturarCalificacionesServlet</servlet-name>
+        <url-pattern>/CapturarCalificacionesServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardarCalificacionesServlet</servlet-name>
+        <url-pattern>/GuardarCalificacionesServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActualizarCalificacionServlet2</servlet-name>
+        <url-pattern>/ActualizarCalificacionServlet2</url-pattern>
+    </servlet-mapping>
+    <!-- Mapeo del nuevo servlet -->
+    <servlet-mapping>
+        <servlet-name>TuServletDeFiltrado</servlet-name>
+        <url-pattern>/TuServletDeFiltrado</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
+
